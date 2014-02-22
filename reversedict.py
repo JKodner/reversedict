@@ -1,5 +1,10 @@
 def reversedict(d):
-	"""Reverses a Dictionary so that the values are the keys and the keys are the values"""
+	"""Reverses a Dictionary so that the original values become the keys,
+	and the original keys become the values.\n
+	If the soon-to-be keys are unhashable values, the original keys and values will be stored
+	in a list named 'unhashable_types'\n
+	If the soon-to-be keys are duplicates of another set of keys, the duplicates are stored
+	in a list named 'returned_duplicates'"""
 	unhashables = {}
 	non_duplicates = {}
 	duplicates = {}
